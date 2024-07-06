@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MicroFundHub | Loan Application</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <ul>
+        <li><a href="profile.html">MicroFundHub</a></li>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="LoanApplicationForm.html">Apply for Loan</a></li>
+        <li><a href="LoanRepaymentSection.html">Loan Repayment</a></li>
+        <li><a href="FeedbackForm.html">Feedback</a></li>
+    </ul>
+
+    <form id="loanApplicationForm" enctype="multipart/form-data">
+        <div class="container">
+            <h1>Loan Application</h1>
+            <hr>
+
+            <label for="loanAmount">Loan Amount: </label>
+            <input type="number" id="loanAmount" name="loanAmount" placeholder="Enter Loan Amount" required>
+
+            <label for="purpose">Purpose: </label>
+            <input type="text" id="purpose" name="purpose" placeholder="Enter Purpose" required>
+
+            <label for="doc">Supporting Document: </label>
+            <input type="file" id="doc" name="doc" accept=".png, .jpg, .jpeg, .pdf" required>
+
+            <button type="submit" class="registerbtn">Submit</button>
+        </div>
+    </form>
+
+    <script src="js/loanApplication.js"></script>
+</body>
+</html>

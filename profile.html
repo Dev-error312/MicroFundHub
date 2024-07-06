@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MicroFundHub | Profile</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <ul>
+        <li><a href="profile.html">MicroFundHub</a></li>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="LoanApplicationForm.html">Apply for Loan</a></li>
+        <li><a href="LoanRepaymentSection.html">Loan Repayment</a></li>
+        <li><a href="FeedbackForm.html">Feedback</a></li>
+    </ul>
+
+    <div class="container">
+        <h1>Profile</h1>
+        <hr>
+        
+        <p id="userName"></p>
+        <p id="userEmail"></p>
+        <button id="changePasswordBtn" class="registerbtn">Change Password</button>
+
+        <form id="changePasswordForm" style="display:none;">
+            <label for="currentPassword">Current Password: </label>
+            <input type="password" placeholder="Enter Current Password" name="currentPassword" id="currentPassword" required>
+            
+            <label for="newPassword">New Password: </label>
+            <input type="password" placeholder="Enter New Password" name="newPassword" id="newPassword" required>
+            
+            <label for="confirmNewPassword">Confirm New Password: </label>
+            <input type="password" placeholder="Confirm New Password" name="confirmNewPassword" id="confirmNewPassword" required>
+            
+            <button type="submit" class="registerbtn">Change Password</button>
+        </form>
+
+        <button id="logoutBtn" class="registerbtn">Logout</button>
+    </div>
+
+    <script src="js/profile.js"></script>
+</body>
+</html>
